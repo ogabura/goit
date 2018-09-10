@@ -57,8 +57,10 @@ header, .sub-footer {
     display: flex;
     align-items: flex-start;;
 }
-.logo {
+.menu-logo .logo {
     color: #dddddd;
+}
+.logo {
     font-family: "Cormorant Unicase";
     font-size: 28px;
     font-weight: 500;
@@ -256,23 +258,6 @@ header, .sub-footer {
     border-top: 1px solid #bbbbbb;
 }
 
-.footer-text {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    color:  #777777;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 21px;
-    text-align: center;    
-}
-
-.footer-text a {
-    color:  #777777;
-    display: inline-block;
-    text-decoration: none;
-}
-
 /*STARS start*/
 .star-rating{
     font-size: 0;
@@ -415,3 +400,83 @@ header, .sub-footer {
   .container {
       text-align: center;
   }
+  
+.footer-logo .logo {
+    color: #333333;
+}
+.sub-footer-text {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color:  #777777;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;    
+}
+
+.sub-footer-text a {
+    color:  #777777;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer-wrapper {
+    background-color: #efefef;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text {
+    color: #333333;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0.36px;
+}
+
+.footer-title {
+    color: #000000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.36px;
+    margin: 0;
+    padding: 0;
+}
+.footer-menu a {
+    color: #333333;;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.48px;
+    display: block;
+    padding: 5px 5px;
+    text-decoration: none;
+    position:relative;
+}
+
+.footer-menu a:hover,
+.footer-menu a:focus {
+    transition: 0.3s;
+}
+
+.footer-menu a:hover:after,
+.footer-menu a:focus:after {
+    width: 100%;
+}
+
+.footer-menu a:after {
+    background-color: #333333;;
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    left:50%;
+    position:absolute;
+    transition: width .3s ease-in-out;
+    transform: translateX(-50%);
+}
