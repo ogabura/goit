@@ -235,11 +235,15 @@ header, .sub-footer {
     display: inline-block;
 }
 
+.reply-button a:hover,
+.reply-button a:focus {
+    color: #c94343;
+}
+
 .main-wrapper:nth-last-of-type(n+2) {
     margin: 43px auto 38px;
     border-bottom: 1px solid #bbbbbb;
 }
-
 
 .sub-main-wrapper {
     width: 94%;
@@ -330,10 +334,10 @@ header, .sub-footer {
     padding: 6px 12px;
     margin-left: -1px;
     line-height: 1.42857143;
-    color: #428bca;
+    color: #bbbbbb;
     text-decoration: none;
     background-color: #fff;
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
   }
   .pagination > li:first-child > a,
   .pagination > li:first-child > span {
@@ -350,9 +354,9 @@ header, .sub-footer {
   .pagination > li > span:hover,
   .pagination > li > a:focus,
   .pagination > li > span:focus {
-    color: #2a6496;
-    background-color: #eee;
-    border-color: #ddd;
+    color: #333333;
+    /*background-color: #eee;
+    border-color: #ddd;*/
   }
   .pagination > .active > a,
   .pagination > .active > span,
@@ -361,10 +365,10 @@ header, .sub-footer {
   .pagination > .active > a:focus,
   .pagination > .active > span:focus {
     z-index: 2;
-    color: #fff;
+    color: #333333;
     cursor: default;
-    background-color: #428bca;
-    border-color: #428bca;
+    /*background-color: #428bca;
+    border-color: #428bca;*/
   }
   .pagination > .disabled > span,
   .pagination > .disabled > span:hover,
@@ -407,3 +411,7 @@ header, .sub-footer {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
   } 
+
+  .container {
+      text-align: center;
+  }
